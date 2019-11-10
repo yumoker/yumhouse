@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* css reset start */
+     *{
+        margin: 0;
+        padding: 0;
+        
+    } 
+    a{
+        text-decoration: none;
+    }
+    .clearfix::after{
+        content: "";
+        clear: both;
+    }
+    /* css reset end */
+    .top{
+        width: 1130px;
+        height: 98px;
+        margin: 0 auto;
+        background-color: pink;
+    }
+    .top .top-picture{
+        height: 98px;
+        width: 200px;
+        border: 2px solid blueviolet;
+        background: url(https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png) no-repeat;
+    }
+    .middle{    
+        background-image: url("./bg.jpg");
+        height: 588px;
+        background-position:center;
+    } 
+    .middle-1{
+        width: 1130px;
+        height: 588px;
+        /* background-color: orange; */
+        border: 1px solid black;
+        margin: 0 auto ;
+    }
+    .middle-1 .middle-2{
+        width: 410px;
+        height: 556px;
+        float: right;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+    .middle-1 .middle-2 .middle-3{
+        width: 410px;
+        height: 32px;
+        border: 1.5px solid greenyellow;
+        padding: 27px 0 24px;
+        text-align: center;
+        line-height: 32px;
+        
+    }
+    .middle-3 a{
+        color: #666;
+        border:1px solid plum;
+        font-size:24px ;
+    }
+    .middle-3 .active{
+        color: #f56600;
+       
+    }
+    .line{
+        width: 1px;
+        height: 24px;
+        margin: 0 35px 0 42px;
+        border: 1px solid #e0e0e0;
+    }
+    .middle-4{
+        width: 410px;
+        height: 416px;
+        border: 1px solid black;
+    }
+    /* .yx{
+        height: 22px;
+        width: 316px;
+        border:1px solid black;
+        padding: 13px 16px 13px 14px;
+        margin: 0 auto;
+    } */
+    .middle-4 input{
+        width: 306px;
+        height: 22px;
+        line-height: 22px;
+        padding: 13px 16px 13px 14px;
+        
+    }
+    .footer-top li{
+        display: inline;
+    }
+    .new fieldset{
+        border: 0;
+        border-top:1px solid black; ;
+        margin-inline-start: 2px;
+        margin-inline-end: 2px;
+        padding-block-start: 0.35em;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+        padding-block-end: 0.625em;
+        padding-top: 10px;
+        display: block;
+       
+    }
+    .new legend{
+        text-align: center;
+        
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top-picture">
+            <a></a>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="middle-1">
+            <div class="middle-2">
+                <div class="middle-3">
+                    <a class="active" href="javascript:void(0)">账号登录</a>
+                    <span class="line"></span>
+                    <a href="javascript:void(0)">扫码登录</a>
+                </div>
+                <div class="middle-4">
+                        <input type="text" placeholder="邮箱/手机号码/小米ID">
+                        <input type="text" placeholder="密码">
+                        <input type="button" value="登录" style="height: 50px;">
+                        <div>
+                            <div class="left">手机短信登录/注册</div>
+                            <div class="right">
+                                <a>立即注册</a>
+                                <span></span>
+                                <a>忘记密码</a>
+                            </div>
+                        <div class="new">
+                                <fieldset>
+                                        <legend>其他方式登录</legend>
+                                </fieldset>
+                        </div>
+                        </div>
+
+
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <ul>
+                <li>
+                    <span>简体</span>
+                    |
+                </li>
+                <li>
+                    <span>繁体</span>
+                    |
+                </li>
+                <li>
+                    <span>English</span>
+                    |
+                </li>
+                <li>
+                    <span>常见问题</span>
+                    |
+                </li>
+                <li>
+                    <span>隐私政策</span>
+                    |
+                </li>            
+            </ul>
+        </div>
+        <div class="footer-bottom"></div>
+   
+    </div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+/*css reset start*/
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+span{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    font-size: 12px;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+}
+/*css reset ending*/
+
+
+.topbar{
+    width: auto;
+    height: 40px;
+    background-color: #333;
+}
+.topbar-content{
+    width: 1226px;
+    height: 40px;
+    background-color: #333;
+    margin: 0 auto;
+}
+.topbar-content a{
+    color: #b0b0b0;
+    line-height: 40px;
+    display: inline-block;
+    font-size: 12px;
+}
+.topbar-content a:hover{
+    color: #ffffff;
+}
+.topbar-content span{
+    margin: 0 .3em;
+    color: #424242;
+}
+.tc-left{
+    float: left;
+}
+.tc-right {
+    float:right;
+}
+.right-left{
+    float: left;
+}
+.cart{
+    float: right;
+    width: 120px;
+    background-color: #424244;
+    color: #b0b0b0;
+    text-align: center;
+    line-height:37px;
+    position: relative;
+}
+.box{
+    width: 124px;
+    height: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #aaa;
+    position: absolute;
+    left:-35px;
+    transition: height .3s ; 
+  
+}
+.box .text{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: -15px;
+    display: none;
+}
+.box .triangle{
+    border-style:solid;
+    border-width: 8px;
+    border-color: transparent transparent #ffffff transparent;
+    width: 0;
+    display: none;
+    position: relative;
+    top:-16px;
+    left:52px;
+}
+.app:hover .triangle{
+    display: block;
+}
+.box-photo img{
+    height: 0;
+    width: 90px; 
+    margin: 0px 17px 0px;
+  
+}
+
+.app:hover .box{
+    width: 124px;
+    height: 148px;
+    display: block;
+    
+}
+
+.app:hover img{
+    height: 90px;
+    width: 90px; 
+}
+.app:hover .text{
+    display: block;
+}
+.cart .cart-menu{
+    width: 316px;
+    height: 0;
+    background-color:#fff;
+    position:absolute;
+    right: 0;
+    top: 40px;
+    transition: height .3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    
+}
+ .cart:hover .cart-menu{
+    height: 80px;
+    width: 316px;
+    display: block; 
+} 
+/* site-header begin */
+.site-header {
+    height: 100px;
+    background-color: aqua;
+}
+
+.site-header .content{
+    width: 1226px;
+    height: 100px;
+    background-color: bisque;
+    margin: 0 auto;
+}
+.site-header .content .content-left{
+    width: 55px;
+    height: 62px;
+    /* background-color: #fff; */
+    margin: 22px 0 0;
+    display: inline-block;
+    margin-top: 22px;
+}
+.site-header .content .content-text{
+    height: 100px;
+    width: 850px;
+    background-color: pink;
+    display: inline-block;
+}
+.box-milogo img{
+    display: inline-block;
+}
+/* site-header ending */
+.home-container{
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+.photo-area{
+    width: 1240px;
+    height: 170px;
+    margin: 0 auto;
+    margin-top: 14px;
+    
+}
+.photo-area .photo-left{
+    width: 234px;
+    height: 170px;
+    float: left;
+    margin-left: 14px;
+    background: #5f5750;
+
+}
+.photo-area .photo-right{
+    width: 978px;
+    height: 170px;
+    float:right;
+    background-color: pink;
+}
+.photo-area .photo-left .six{
+    width: 228px;
+    height: 164px;
+    padding: 3px;
+    background-color: transparent;
+    position: relative;
+
+}
+.photo-area .photo-left li{
+    width: 70px;
+    height: 82px;
+    padding-left: 3px;
+    padding-right:3px;
+    list-style: none;
+    float: left;
+
+}
+.six li::before{
+    content: "";
+    width: 70px;
+    height: 1px;
+    background: #665e57;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.six li::after {
+    content: "";
+    width: 1px;
+    height: 70px;
+    background: #665e57;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.photo-left li img{
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 4px;
+    display: block;
+}
+.six .six-1{
+    width: 70px;
+    height: 63.6px;
+    text-align: center;
+    padding-top: 18px;
+    color: #fff;
+}
+.six-1 a{
+    display: inline-block;
+}
+.six li:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.six li{
+    opacity: .7;
+}
+.photo-right img{
+    width: 316px;
+    height: 170px;
+    display: inline-block;
+    margin-left: 11px;
+}
+.photo-right .first{
+    margin-left: 0;
+}

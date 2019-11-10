@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var i = confirm("吃不吃饭");
+    if(confirm){
+        var num = prompt("几个人"); //输入弹框
+        var b=[]; //b是一个长度可以定义的数组
+        var food=[]; 
+        for(var a= 1; a<=num ; a++)
+        {
+            var name =prompt("第"+a+"个人");
+            b.push(name);
+            var n=parseInt(Math.random()*10);
+            
+            var foods;
+            switch(n)
+            {
+                case 1:foods="吃鸡公煲"; break;
+                case 2:foods="吃麻辣烫"; break;
+                case 3:foods="吃啵啵鱼"; break;
+                case 4:foods="吃包子"; break;
+                default:foods="吃土豆";break;
+            }
+            food.push(name+foods);
+        }
+        for(var a= 0; a<num ; a++){
+            console.log(food[a]);
+        }
+    
+        
+       
+    }
+    </script>
+</body>
+</html>
